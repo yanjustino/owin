@@ -8,6 +8,9 @@ namespace MidwareCodeSchool
 
     public class Midware
     {
+        ///The primary interface in OWIN is called the application delegate or AppFunc. 
+        /// An application delegate takes the IDictionary<string, object> environment and returns a Task 
+        /// when it has finished processing.
         private AppFunc _next;
 
         public Midware(AppFunc next)
